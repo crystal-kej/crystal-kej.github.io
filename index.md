@@ -18,7 +18,7 @@
 </head>
 <body>
   <div class="resume-container">
-    <img src="photo.jpg" alt="个人照片">
+    <img src="R.jpg" alt="个人照片">
     <div class="resume-details">
       <h2>姓名：Your Name</h2>
       <p>联系方式：Email: your.email@example.com / 手机号码: 123-456-7890</p>
