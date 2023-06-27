@@ -7,11 +7,24 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 20px;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 800px;
+      background-color: #ffffff;
+      padding: 40px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     h1 {
       font-size: 28px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
+      text-align: center;
     }
 
     h2 {
@@ -36,92 +49,27 @@
     .section-header {
       margin-bottom: 10px;
     }
-
-    .section-content {
-      margin-left: 20px;
-    }
   </style>
 </head>
 <body>
-  <h1>个人简历</h1>
+  <div class="container">
+    <h1>个人简历</h1>
 
-  <div class="section">
-    <h2 class="section-header">基本信息</h2>
-    <div class="section-content">
-      <img src="R.jpg" alt="个人照片" width="150" height="150">
-      <p>姓名：Your Name</p>
-      <p>性别：男</p>
-      <p>出生日期：1990年1月1日</p>
-      <p>邮箱：your.email@example.com</p>
-      <p>电话：123-456-7890</p>
-      <p>地址：城市，国家</p>
+    <div class="section">
+      <h2 class="section-header">基本信息</h2>
+      <div class="section-content">
+        <img src="photo.jpg" alt="个人照片" width="150" height="150">
+        <p>姓名：Your Name</p>
+        <p>性别：男</p>
+        <p>出生日期：1990年1月1日</p>
+        <p>邮箱：your.email@example.com</p>
+        <p>电话：123-456-7890</p>
+        <p>地址：城市，国家</p>
+      </div>
     </div>
-  </div>
 
-  <div class="section">
-    <h2 class="section-header">教育背景</h2>
-    <div class="section-content">
-      <h3>学位1</h3>
-      <p>学校：学校名称</p>
-      <p>专业：专业名称</p>
-      <p>起止时间：起始日期 - 结束日期</p>
+    <!-- 其他部分内容... -->
 
-      <h3>学位2</h3>
-      <p>学校：学校名称</p>
-      <p>专业：专业名称</p>
-      <p>起止时间：起始日期 - 结束日期</p>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-header">工作经验</h2>
-    <div class="section-content">
-      <h3>公司1</h3>
-      <p>职位：职位名称</p>
-      <p>起止时间：起始日期 - 结束日期</p>
-      <ul>
-        <li>工作描述1</li>
-        <li>工作描述2</li>
-      </ul>
-
-      <h3>公司2</h3>
-      <p>职位：职位名称</p>
-      <p>起止时间：起始日期 - 结束日期</p>
-      <ul>
-        <li>工作描述1</li>
-        <li>工作描述2</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-header">技能</h2>
-    <div class="section-content">
-      <h3>编程语言</h3>
-      <ul>
-        <li>语言1</li>
-        <li>语言2</li>
-      </ul>
-
-      <h3>技术工具</h3>
-      <ul>
-        <li>工具1</li>
-        <li>工具2</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-header">项目经历</h2>
-    <div class="section-content">
-      <h3>项目1</h3>
-      <p>描述：项目描述</p>
-      <p>时间：起始日期 - 结束日期</p>
-
-      <h3>项目2</h3>
-      <p>描述：项目描述</p>
-      <p>时间：起始日期 - 结束日期</p>
-    </div>
   </div>
 </body>
 </html>
