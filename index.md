@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
   <style>
@@ -20,9 +19,11 @@
   <div class="resume-container">
     <img src="R.jpg" alt="个人照片">
     <div class="resume-details">
-      <h2>姓名：Your Name</h2>
-      <p>联系方式：Email: your.email@example.com / 手机号码: 123-456-7890</p>
-      <p>地址：City, State, Country</p>
+      <h2>Name：Your Name</h2>
+      <p>Department of Computer Science and Engineering, Shanghai Jiao Tong University</p>
+      <p>Office: </p>
+      <p>Address：City, State, Country</p>
+      <p>Email:
     </div>
   </div>
 
