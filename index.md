@@ -5,7 +5,7 @@
 - 联系方式：Email: your.email@example.com / 手机号码: 123-456-7890
 - 地址：City, State, Country
 
-![个人照片](photo.jpg)
+![个人照片](R.jpg)
 
 ## 教育背景
 - 学位：学校名称，学位名称，起止时间
