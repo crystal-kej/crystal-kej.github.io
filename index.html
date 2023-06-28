@@ -3,19 +3,20 @@
 <head>
   <title>KeJing</title>
   <style>
-    nav {
+    #navbar {
       position: fixed;
       top: 0;
-      left: 0;
+      left: 0%;
       right: 0;
-      background-color: #ffffff;
-      padding: 5px 0;
+      background-color: rgb(67, 67, 68);
+      padding: 10px 0;
       text-align: center;
       width: 100%;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      opacity: 0.97;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     }
 
-    ul {
+    #navbar ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -23,23 +24,29 @@
       justify-content: center;
     }
 
-    li {
+    #navbar li {
       
-      margin: 0 10px;
-      font-size: x-small;
+      margin: 0 30px;
+      font-weight: bold;
       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       margin-right: 10px;
     }
-    li.special {
-      color:#000;
-      font-weight: bold;
-      color: 000;
-      font-size: large;
+    #navbar li a {
+      display: block;
+      padding: 14px 16px;
+      text-decoration: none;
+      position: relative;
+    }
+
+    #navbar li.special {
+      color:#f3f4f7;
+      font-weight: bolder;
+      font-size: 26px;
       margin-right: 500px;
   }
 
     a {
-      color: #000;
+      color: #9258a9;
       text-decoration: none;
     }
 
@@ -50,19 +57,21 @@
     body {
       font-family: Arial, sans-serif;
       margin: 2px;
-      padding: 20px;
-      background-color: #c0c7ce;
+      padding: 2px;
+      background-color: #ffffff;
     }
 
     .container {
-      max-width: 80%;
+      max-width: 120%;
       background-color: #ffffff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      
+      font-size: larger;
       margin: 0 auto;
+      
     }
 
     h1 {
-      font-size: 28px;
+      font-size: 38px;
       margin-bottom: 20px;
       text-align: center;
     }
@@ -72,33 +81,146 @@
       align-items: center;
       margin-bottom: 30px;
 
+      background-image: url('6.png');
+    background-size: cover;
+    background-position: center;
+    }
+
+    
+    .profile-content {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0px;
     }
 
     .profile-image {
       float: left;
       margin-top: 3%;
-      margin-left: 2%;
+      margin-left: 12%;
     }
+
+    .profile-paper {
+      float: left;
+      margin-top: 0%;
+      margin-bottom: 0%;
+      margin-left: 0%;
+      background-image: url('13.png');
+      background-size: cover;
+      background-position: bottom;
+    }
+    .profile-paperinfo {
+      overflow: hidden;
+      margin-left: 0%;
+      margin-right: 0%;
+      padding: 70px;
+    }
+
+    .profile-book {
+      float: left;
+      margin-top: 0%;
+      margin-bottom: 0%;
+      margin-left: 0%;
+      background-image: url('9.png');
+      background-size: cover;
+      background-position: bottom;
+    }
+    .profile-bookinfo {
+      overflow: hidden;
+      margin-left: 0%;
+      margin-right: 0%;
+      padding: 70px;
+    }
+
+    .profile-fund {
+      float: left;
+      margin-top: 0%;
+      margin-bottom: 0%;
+      margin-left: 0%;
+      background-image: url('12.png');
+      background-size: cover;
+      background-position: bottom;
+    }
+    .profile-fundinfo {
+      overflow: hidden;
+      margin-left: 0%;
+      margin-right: 0%;
+      padding: 70px;
+    }
+
+    
+    .profile-patent {
+      float: left;
+      margin-top: 0%;
+      margin-bottom: 0%;
+      margin-left: 0%;
+      background-image: url('10.png');
+      background-size: cover;
+      background-position: bottom;
+    }
+    .profile-patentinfo {
+      overflow: hidden;
+      margin-left: 0%;
+      margin-right: 0%;
+      padding: 70px;
+    }
+
+    .profile-student {
+      float: left;
+      margin-top: 0%;
+      margin-bottom: 0%;
+      margin-left: 0%;
+      background-image: url('7.png');
+      background-size: cover;
+      background-position: bottom;
+    }
+    .profile-studentinfo {
+      overflow: hidden;
+      margin-left: 0%;
+      margin-right: 0%;
+      padding: 70px;
+    }
+
+
 
     .profile-info {
       overflow: hidden;
-      margin-left: 10%;
-      margin-right: 2%;
+      margin-left: 9%;
+      margin-right: 0%;
+      padding: 70px;
     }
 
+
     h2 {
-      font-size: 22px;
+      font-size: 28px;
       margin-bottom: 10px;
     }
 
     p {
-      margin-bottom: 5px;
+      margin-bottom: 25px;
     }
 
     .section {
-
-      padding: 20px;
+      padding: 2px;
       color: #000;
+    }
+
+    .active {
+
+      color: rgb(255, 255, 255);
+    }
+
+    .active::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: rgb(42, 85, 141);
+      opacity: 0.5;
+      z-index: -1;
+      border-radius: 50px;
+      padding: 1px 1px;
     }
 
     .section:nth-child(odd) {
@@ -111,13 +233,25 @@
 
     html {
       scroll-behavior: smooth;
+      
     }
+    .no-wrap {
+    white-space: nowrap;
+    color: #ffffff;
+
+  }
+  .round-image {
+    border-radius: 50%;
+  }
+  .font-color {
+    color: #ffffff;
+  }
   </style>
 </head>
 <body>
-  <nav>
+  <nav id="navbar">
     <ul>
-      <li class = special>柯 晶</a></li>
+      <li class = special >柯 晶</a></li>
       <li><a href="#basic-info">基本信息</a></li>
       <li><a href="#publication">论文发表</a></li>
       <li><a href="#book">出版著作</a></li>
@@ -127,27 +261,36 @@
     </ul>
   </nav>
 
-  <div class="container">
-    <div class="profile" id="basic-info">
+  <div class="container" >
+    <div class="profile" >
       <div class="profile-image">
-        <img src="photo1.jpg" alt="个人照片" width="300" height="300">
+        <img class = "round-image" src="photo1.jpg" alt="个人照片" width="300" height="300">
       </div>
 
-      <div class="profile-info" >
-        <h2>基本信息</h2>
-        <p>姓名：柯 晶</p>
-        <p>地址：上海市闵行区东川路800号上海交通大学电子信息与电气工程学院</p>
-        <p>办公室：电院3号楼519</p>
-        <p>电子邮箱：kejing@cs.sjtu.edu.cn</p>
-        <p>简介：澳大利亚新南威尔士大学PhD，全职在上海交通大学先进体系结构实验室，澳大利亚联邦科学与工业研究组织 \ 新南威尔士大学的visiting scientist \ fellow。她的研究领域主要在GPU架构、驱动以及上层应用的设计，有着多年在GPU制造商AMD和S3 Graphics的商业经验。目前的研究方向为人工智能在医疗图像上的应用以及GPU高性能计算。</p>
+      <div class="profile-info" id="basic-info" >
+        <h2 class="font-color">基本信息</h2>
+        <h2 class="font-color">姓名：柯 晶</h2>
+        <h2 class="font-color">地址：上海市闵行区东川路800号上海交通大学电子信息与电气工程学院</h2>
+        <h2 class="font-color">电子邮箱：kejing@cs.sjtu.edu.cn</h2>
+        <h2 class="font-color">简介：博士毕业于澳大利亚新南威尔士大学（2023 QS Ranking 45），目前任职于上海交通大学计算机系，兼新南威尔士大学联席讲师（Adjunct Lecturer）。在S3 Graphics，AMD，澳大利亚CSIRO等机构有多年的研发经验，目前主要从事多种癌症肿瘤图像的智能识别及GPU高性能并行计算</h2>
 
       </div>
     </div>
 
+
     <div class="section" id="publication">
-      <h2 class="section-header">论文发表</h2>
-      <div class="section-content">
-        <h3>期刊代表作</h3>
+      <div class="profile-content" >
+        <section class="profile-paper">
+        <div >
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <h1 class="no-wrap">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp论文发表&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp       </h1>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        </section>
+
+        <div class="profile-paperinfo" >
+
+          <h2>期刊代表作</h2>
         <p>1)	<b>J Ke</b>, K Liu, Y Sun, Y Xue, J Huang, Y Lu, J Dai, Y Chen, X Han, Y Shen, D Shen. Artifact Detection and Restoration in Histology Images with Stain-Style and Structural Preservation. <i>IEEE Transactions on Medical Imaging </i>(TMI), 2023 Early Access (SCI中科院1区, 影响因子 IF 11.0, CCF-B).</p>
         <p>2)	<b>J Ke</b>, Y Lu, Y Shen, J Zhu, Y Zhou, J Huang, J Yao, X Liang, Y Guo, Z Wei, S Liu, Q Huang, F Jiang & D Shen. A crowd cluster pinpointed nucleus segmentation framework with cross-modality datasets. <i>Medical Image Analysis</i> (MedIA), 2023, 85(102758):  (SCI中科院1区, 影响因子 IF 13.8).</p>
         <p>3)	<b>J Ke</b>, Y Shen, Y Lu, Y Guo & D Shen. Mine Local Homogeneous Representation by Interaction Information Clustering with Unsupervised Learning in Histopathology Images. <i>Computer Methods and Programs in Biomedicine</i>. 2023. (SCI中科院2区, 影响因子 IF 7.0).</p>
@@ -155,12 +298,12 @@
         <p>5)	Y Shen, D Shen & <b>J Ke</b>. Identify Representative Samples by Conditional Random Field of Cancer Histology Images, <i>IEEE Transactions on Medical Imaging</i> (TMI), Volume: 41, Issue: 12, December 2022 (SCI中科院1区, 影响因子 IF 11.0, CCF-B).</p>
         <p>6)	Y Shen & <b>J Ke</b>. Sampling Based Tumor Recognition in Whole-slide Histology Image with Deep Learning Approaches. <i>IEEE/ACM Transactions on Computational Biology and Bioinformatics (TCBB)</i>, Volume: 19, Issue: 4, 2022, pp: 2431 – 2441 (SCI, 影响因子 IF 3.7, CCF-B).</p>
         <p>7)	<b>J Ke</b>, Y Shen, Y Lu, J Deng, J. D. Wright, Y Zhang, Q Huang, D Wang, N Jing, X Liang & F Jiang. Quantitative analysis of abnormalities in gynecologic cytopathology with deep learning, <i>Laboratory Investigation</i> 101, pp: 513–524, 2021 (SCI中科院2区, 影响因子 IF 5.5).</p>
-        
-        <h3>会议代表作</h3>
+        <br>
+        <h2>会议代表作</h2>
         <p>1)	J Wang, F Ino & <b>J Ke</b>. PRF: A Fast Parallel Relaxed Flooding Algorithm for Voronoi Diagram Generation on GPU. 37th <i>IEEE International Parallel & Distributed Processing Symposium</i> (IPDPS), 2023 (CCF-B). </p>
         <p>2)	J Zhu, Y Shen, H Zhang & <b>J Ke</b>. An Anti-Biased TBSRTC-Category Aware Nuclei Segmentation Framework with A Multi-Label Thyroid Cytology Benchmark, <i>International Conference on Medical Image Computing and Computer-Assisted Intervention</i> (MICCAI) 2023 (CCF-B).</p>
-        <p>3)	E L Carbonell, Y Shen, X Yang & <b>J Ke</b>. COVID-19 Pneumonia Classification with Transformer from Incomplete Modalities. MICCAI 2023.</p>
-        <p>4)	Y Shen & <b>J Ke</b>. StainDiff: Transfer Stain Styles of Histology Images with Denoising Diffusion Probabilistic Models and Self-Ensemble. MICCAI 2023.</p>
+        <p>3)	E L Carbonell, Y Shen, X Yang & <b>J Ke</b>. COVID-19 Pneumonia Classification with Transformer from Incomplete Modalities. MICCAI 2023 (CCF-B).</p>
+        <p>4)	Y Shen & <b>J Ke</b>. StainDiff: Transfer Stain Styles of Histology Images with Denoising Diffusion Probabilistic Models and Self-Ensemble. MICCAI 2023 (CCF-B).</p>
         <p>5)	Y Shen & <b>J Ke</b>. KnowledgeIE: Unifying Online-Offline Distillation based on Knowledge Inheritance and Evolution. <i>IEEE International Conference on Multimedia & Expo</i> (ICME), 2023 (CCF B)</p>
         <p>6)	Y Shen, Y Luo, D Shen & <b>J Ke</b>. RandStainNA: Learning Stain-Agnostic Features from Histology Slides by Bridging Stain Augmentation and Normalization, MICCAI 2022 (CCF B).</p>
         <p>7)	<b>J Ke</b>, Y Shen, X Liang, D Shen. Contrastive Learning Based Stain Normalization Across Multiple Tumor Histopathology. MICCAI 2021 (CCF B).</p>
@@ -174,78 +317,198 @@
         <p>15)	<b>J Ke</b>, Yiqing Shen, Yi Guo & Xiaoyao Liang. Fast Tumor Detector in Whole-slide Image with Dynamic Programming Based Monte Carlo Sampling, <i>International Conference on Image Processing</i> (ICIP), 2020 （CCF-C）.</p>
         <p></p>
 
+        </div>
       </div>
     </div>
 
+
+
+
     <div class="section" id = "book">
-      <h2 class="section-header">出版著作</h2>
-      <div class="section-content">
+
+
+
+    <div class="profile-content" >
+      <div class="profile-book">
+        <br><br>
+        <h1 class="no-wrap" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp出版著作&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h1>
+        <br><br>
+      </div>
+
+      <div class="profile-bookinfo" >
         <p>景乃锋，柯晶，梁晓峣。通用图形处理器设计-GPGPU编程模型与架构原理，清华大学出版社，2022-05出版</p>
       </div>
     </div>
+  </div>
 
+  
+  <div class="section" id="fund">
+    <div class="profile-content" >
+      <div class="profile-fund">
+        <br><br><br><br><br><br>
+        <h1 class="no-wrap">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp项目资助&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h1>
+        <br><br><br><br><br><br>
+      </div>
 
-    <div class="section" id = "fund">
-      <h2 class="section-header">项目资助</h2>
-      <div class="section-content">
+      <div class="profile-fundinfo" >
         <p>国家自然科学基金青年：弱标注肿瘤病理图像分析及异构系统高通量计算关键技术研究 2022.1～2024.12</p>
         <p>上海市自然科学基金面上项目：基于临床癌症辅助诊断的病理图像空间关联性特征融合研究 2023.4～2026.3</p>
         <p>上海交通大学“交大之星“计划医工交叉研究基金：2023.1～2025.12
           <br>a）基于人工智能的多模态影像构建肝癌门脉癌栓的新型精准分型
           <br>b）基于深度学习的多模态多切面超声及病理图像分析早期评估乳腺癌新辅助化疗疗效
-
-        </p>
-      </div>
-    </div>
-
-    <div class="section" id="patent">
-      <h2 class="section-header">国家知识产权局专利授予（第一发明人）</h2>
-      <div class="section-content">
-        <p>细胞病理图像分割方法及装置； ZL202011379134.0；授权公告日， 2022-11-01</p>
-        <p>病理图像染色风格归一化方法及装置；ZL202010912039.6；授权公告日：2022-11-01</p>
-        <p>图像分类方法、装置、电子设备和存储介质；ZL202110510967.4；授权公告日：2021-5-11</p>
-      </div>
-    </div>
-
-
-    <div class="section" id="student">
-      <h2 class="section-header">学生培养</h2>
-      <div class="section-content">
-        <h3>上海交通大学-卫宁健康智慧医疗全国挑战赛（2022年第五届）</h3>
-        <p>•	微世界放大镜队-非凡奖（高校最高奖）</p>
-        <p>•	计算者联盟-精英奖</p>
-        <br>
-        <h3>大学生创新创业训练计划 （大创）</h3>
-        <p>国家级优秀项目：</p>
-        <p>•	深度学习自动检测医学图像中的瑕疵噪声（2023 二十五期）</p>
-        <p>•	基于深度学习的医学影像实时诊断系统（2023二十五期）</p>
-        <p>•	运用全局标签的弱监督学习计算分析甲状腺病理图像（2022二十二期）</p>
-        <p>上海市级优秀项目：</p>
-        <p>•	基于神经网络的病理组织学图像中生物标记的识别（2021 二十一期）</p>
-        <p>•	基于自监督学习的医学影像分析（2022 二十三期）</p>
-        <h3>莙政项目</h3>
-        <p>•	2023年第十一期：王嘉怡；基于深度学习的甲状腺分级预测可视化系统</p>
-        <p>•	2022年第十期：周艺晋；基于深度学习的精准医疗肿瘤预后模型开发与实验研究</p>
-        <p>•	2020年第八期（获校优秀导师称号）：沈逸卿；基于深度学习的全视野数字切片的分类模型何自动标注策略</p>
       </div>
     </div>
   </div>
 
 
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      const links = document.querySelectorAll('a[href^="#"]');
-      links.forEach((link) => {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          const targetId = link.getAttribute('href');
-          const targetElement = document.querySelector(targetId);
-          if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth' });
-          }
-        });
-      });
+
+
+
+    <div class="section" id="patent">
+      <div class="profile-content" >
+        <div class="profile-patent" >
+          <br>
+          <h1 class="no-wrap" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp国家知识产权局&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>专利授予<br>（第一发明人）</h1>
+          <br><br>
+        </div>
+  
+        <div class="profile-patentinfo" >
+          <p>细胞病理图像分割方法及装置； ZL202011379134.0；授权公告日， 2022-11-01</p>
+        <p>病理图像染色风格归一化方法及装置；ZL202010912039.6；授权公告日：2022-11-01</p>
+        <p>图像分类方法、装置、电子设备和存储介质；ZL202110510967.4；授权公告日：2021-5-11</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="section" id="student">
+      <div class="profile-content" >
+        <div class="profile-student">
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <h1 class="no-wrap">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp学生培养&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h1>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+  
+        <div class="profile-studentinfo" >
+          <h2>上海交通大学-卫宁健康智慧医疗全国挑战赛（2022年第五届）</h2>
+        <p>•	微世界放大镜队-非凡奖（高校最高奖）</p>
+        <p>•	计算者联盟-精英奖</p>
+        <br>
+        <h2>大学生创新创业训练计划 （大创）</h2>
+        <h3>国家级优秀项目：</h3>
+        <p>•	深度学习自动检测医学图像中的瑕疵噪声（2023 二十五期）</p>
+        <p>•	基于深度学习的医学影像实时诊断系统（2023二十五期）</p>
+        <p>•	运用全局标签的弱监督学习计算分析甲状腺病理图像（2022二十二期）</p>
+        <h3>上海市级优秀项目：</h3>
+        <p>•	基于神经网络的病理组织学图像中生物标记的识别（2021 二十一期）</p>
+        <p>•	基于自监督学习的医学影像分析（2022 二十三期）</p>
+        <br>
+        <h2>莙政项目</h2>
+        <p>•	2023年第十一期：王嘉怡；基于深度学习的甲状腺分级预测可视化系统</p>
+        <p>•	2022年第十期：周艺晋；基于深度学习的精准医疗肿瘤预后模型开发与实验研究</p>
+        <p>•	2020年第八期（获校优秀导师称号）：沈逸卿；基于深度学习的全视野数字切片的分类模型何自动标注策略</p>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+
+
+
+
+  </div>
+
+
+<script>
+document.querySelectorAll('#navbar a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    document.querySelectorAll('#navbar a').forEach(otherLink => {
+      otherLink.classList.remove('active');
     });
+
+    link.classList.add('active');
+    link.dataset.text = link.innerText;
+
+    const target = document.querySelector(this.hash);
+    const offset = 20; // 设置滚动偏移量，可以根据需求进行调整
+    const top = target.offsetTop + offset;
+
+    target.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    });
+
+    window.scroll({
+      top: top,
+      behavior: 'smooth'
+    });
+  });
+});
+
+
+window.addEventListener("scroll", function() {
+  let navbarLinks = document.querySelectorAll('#navbar a');
+  navbarLinks.forEach(link => {
+    let section = document.querySelector(link.hash);
+    if (
+      section.offsetTop <= window.scrollY &&
+      section.offsetTop + section.offsetHeight > window.scrollY
+    ) {
+      link.classList.add('active');
+      link.dataset.text = link.innerText;
+    } else {
+      link.classList.remove('active');
+    }
+  });
+});
+
+var cnt = 0
+document.addEventListener('click', function(event) {
+  // 鼠标点击事件发生时的回调函数
+  // event 包含了关于点击事件的信息
+  
+  // 获取鼠标点击的坐标位置
+  var x = event.clientX;
+  var y = event.clientY;
+  
+  // 获取鼠标点击的目标元素
+  var target = event.target;
+  if(cnt==0){
+    cnt++;
+    simulateMouseClick(x,y)
+
+  }
+  else{
+    cnt=0;
+  }
+  // 输出相关信息到控制台
+  console.log('鼠标点击坐标：', x, y);
+  console.log('点击的目标元素：', target);
+  console.log('cnt=：', cnt);
+});
+
+
+function simulateMouseClick(x, y) {
+  var event = new MouseEvent('click', {
+    view: window,
+    bubbles: true,
+    cancelable: true,
+    clientX: x,
+    clientY: y
+  });
+
+  var targetElement = document.elementFromPoint(x, y);
+  targetElement.dispatchEvent(event);
+}
+
+
+
+
   </script>
   </div>
 
