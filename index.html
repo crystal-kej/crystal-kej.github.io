@@ -8,7 +8,7 @@
       top: 0;
       left: 0%;
       right: 0;
-      background-color: rgb(67, 67, 68);
+      background-color: rgb(239, 200, 215);
       padding: 10px 0;
       text-align: center;
       width: 100%;
@@ -46,7 +46,7 @@
   }
 
     a {
-      color: #9258a9;
+      color: #A4676E;
       text-decoration: none;
     }
 
@@ -76,14 +76,25 @@
       text-align: center;
     }
 
+    h0 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
     .profile {
       display: flex;
       align-items: center;
       margin-bottom: 30px;
 
-      background-image: url('6.png');
+      background-image: url('16.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     }
 
     
@@ -104,7 +115,7 @@
       margin-top: 0%;
       margin-bottom: 0%;
       margin-left: 0%;
-      background-image: url('13.png');
+      background-image: url('14.jpg');
       background-size: cover;
       background-position: bottom;
     }
@@ -120,7 +131,7 @@
       margin-top: 0%;
       margin-bottom: 0%;
       margin-left: 0%;
-      background-image: url('9.png');
+      background-image: url('16.jpg');
       background-size: cover;
       background-position: bottom;
     }
@@ -136,7 +147,7 @@
       margin-top: 0%;
       margin-bottom: 0%;
       margin-left: 0%;
-      background-image: url('12.png');
+      background-image: url('14.jpg');
       background-size: cover;
       background-position: bottom;
     }
@@ -153,7 +164,7 @@
       margin-top: 0%;
       margin-bottom: 0%;
       margin-left: 0%;
-      background-image: url('10.png');
+      background-image: url('16.jpg');
       background-size: cover;
       background-position: bottom;
     }
@@ -169,9 +180,9 @@
       margin-top: 0%;
       margin-bottom: 0%;
       margin-left: 0%;
-      background-image: url('7.png');
+      background-image: url('14.jpg');
       background-size: cover;
-      background-position: bottom;
+      background-position: right;
     }
     .profile-studentinfo {
       overflow: hidden;
@@ -187,12 +198,6 @@
       margin-left: 9%;
       margin-right: 0%;
       padding: 70px;
-    }
-
-
-    h2 {
-      font-size: 28px;
-      margin-bottom: 10px;
     }
 
     p {
@@ -216,7 +221,7 @@
       height: 100%;
       left: 0;
       top: 0;
-      background-color: rgb(42, 85, 141);
+      background-color: rgb(230, 141, 173);
       opacity: 0.5;
       z-index: -1;
       border-radius: 50px;
@@ -237,18 +242,21 @@
     }
     .no-wrap {
     white-space: nowrap;
-    color: #ffffff;
+    color: #000000;
 
   }
   .round-image {
     border-radius: 50%;
   }
   .font-color {
-    color: #ffffff;
+    color: #000000;
   }
   </style>
 </head>
 <body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/12.1.0/build.css">
+
   <nav id="navbar">
     <ul>
       <li class = special >柯 晶</a></li>
@@ -265,14 +273,33 @@
     <div class="profile" >
       <div class="profile-image">
         <img class = "round-image" src="photo1.jpg" alt="个人照片" width="300" height="300">
+        <br>
+
+
+        
+        <h0 class="no-wrap"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp柯晶</b></h0>
+        <br><br>
+
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a href="https://crystal-kej.github.io/" >
+          <img  src="home.svg"  width = "35" height="35">
+        </a>
+        &nbsp&nbsp&nbsp&nbsp
+        <a href="mailto:kejing@cs.sjtu.edu.cn" >
+          <img src="mail.svg"  width = "35" height="35">
+        </a>
+        &nbsp&nbsp&nbsp&nbsp
+        <a href="https://scholar.google.com/citations?user=zX41yC8AAAAJ&hl=zh-CN" >
+          <img src="mortar-board.svg"  width = "35" height="35">
+        </a>
+      
       </div>
 
       <div class="profile-info" id="basic-info" >
-        <h2 class="font-color">基本信息</h2>
-        <h2 class="font-color">姓名：柯 晶</h2>
+
         <h2 class="font-color">地址：上海市闵行区东川路800号上海交通大学电子信息与电气工程学院</h2>
         <h2 class="font-color">电子邮箱：kejing@cs.sjtu.edu.cn</h2>
-        <h2 class="font-color">简介：博士毕业于澳大利亚新南威尔士大学（2023 QS Ranking 45），目前任职于上海交通大学计算机系，兼新南威尔士大学联席讲师（Adjunct Lecturer）。在S3 Graphics，AMD，澳大利亚CSIRO等机构有多年的研发经验，目前主要从事多种癌症肿瘤图像的智能识别及GPU高性能并行计算</h2>
+        <h2 class="font-color">简介：博士毕业于澳大利亚新南威尔士大学，目前在上海交通大学计算机系任助理研究员硕导、新南威尔士大学联席讲师（Adjunct Lecturer）。在S3 Graphics，AMD和CSIRO等机构有多年的商业经验。目前主要的研究方向为病理图像的智能分析诊断及大规模图像的高性能并行计算。在医学图像分析领域以一作或通讯在MedIA、TMI、MICCAI等期刊会议发表论文三十篇；在高性能并行计算领域会议如IPDPS、MICRO、DAC等发表论文十篇。出版著作“通用图形处理器设计-GPGPU编程模型与架构原理”（清华大学出版社）。主持国家自然科学基金青年项目，上海市自然科学基金面上项目，以及两项“交大之星“计划医工交叉研究基金；并于国家知识产权局授权专利三项。担任MICS、CSIG、CAAI等学会专委，Frontiers in Radiology 的主题编委；长期担任TPAMI、TMI和MICCAI等期刊会议的审稿人。</h2>
 
       </div>
     </div>
@@ -282,9 +309,9 @@
       <div class="profile-content" >
         <section class="profile-paper">
         <div >
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
           <h1 class="no-wrap">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp论文发表&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp       </h1>
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
         </section>
 
