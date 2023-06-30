@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>KeJing</title>
   <style>
@@ -58,6 +59,7 @@
       font-family: Arial, sans-serif;
       margin: 2px;
       padding: 2px;
+      zoom: 100%;
       background-color: #faebf6;
     }
 
@@ -258,9 +260,12 @@
   .font-color {
     color: #000000;
   }
+
+
   </style>
 </head>
 <body>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/12.1.0/build.css">
 
@@ -403,7 +408,7 @@
         <div class="profile-patent" >
           <br><br><br><br>
           <h1 class="no-wrap" >&nbsp&nbsp&nbsp&nbsp&nbsp国家知识产权局&nbsp&nbsp&nbsp&nbsp<br>专利授予</h1>
-          <br><br><br><br>
+          <br><br><br><br><br>
         </div>
   
         <div class="profile-patentinfo" >
@@ -504,44 +509,7 @@ window.addEventListener("scroll", function() {
   });
 });
 
-var cnt = 0
-document.addEventListener('click', function(event) {
-  // 鼠标点击事件发生时的回调函数
-  // event 包含了关于点击事件的信息
-  
-  // 获取鼠标点击的坐标位置
-  var x = event.clientX;
-  var y = event.clientY;
-  
-  // 获取鼠标点击的目标元素
-  var target = event.target;
-  if(cnt==0){
-    cnt++;
-    simulateMouseClick(x,y)
 
-  }
-  else{
-    cnt=0;
-  }
-  // 输出相关信息到控制台
-  console.log('鼠标点击坐标：', x, y);
-  console.log('点击的目标元素：', target);
-  console.log('cnt=：', cnt);
-});
-
-
-function simulateMouseClick(x, y) {
-  var event = new MouseEvent('click', {
-    view: window,
-    bubbles: true,
-    cancelable: true,
-    clientX: x,
-    clientY: y
-  });
-
-  var targetElement = document.elementFromPoint(x, y);
-  targetElement.dispatchEvent(event);
-}
 
 
 
